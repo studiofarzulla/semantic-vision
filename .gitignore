@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.blg
+*.out
+*.fls
+*.fdb_latexmk
+*.bbl
+*.synctex.gz
+texput.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (too large for git)
+code/data/coco/
+
+# Tooling artifacts
+.claude-flow/
+.swarm/

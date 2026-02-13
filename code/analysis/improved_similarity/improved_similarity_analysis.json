@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "jaccard_raw": {
+      "mean": 0.09461968727610943,
+      "std": 0.05776237699059985,
+      "median": 0.10714285714285714,
+      "ci_lower": 0.09343854991938598,
+      "ci_upper": 0.0957895514117623,
+      "n": 9244,
+      "t_statistic": -674.7207605822188,
+      "p_value_onesided": 0.0,
+      "cohens_d": -7.018068400991557,
+      "context_dependence": 90.53803127238905
+    },
+    "jaccard_lemmatized": {
+      "mean": 0.04809956807638723,
+      "std": 0.0376048994640771,
+      "median": 0.047619047619047616,
+      "ci_lower": 0.04732439244520412,
+      "ci_upper": 0.04884550223821971,
+      "n": 9244,
+      "t_statistic": -1155.3266756677303,
+      "p_value_onesided": 0.0,
+      "cohens_d": -12.017062626514944,
+      "context_dependence": 95.19004319236127
+    },
+    "cosine_similarity": {
+      "mean": 0.41477836107172644,
+      "std": 0.23329219366900178,
+      "median": 0.466163232922554,
+      "ci_lower": 0.4100930187630847,
+      "ci_upper": 0.419547550005277,
+      "n": 9244,
+      "t_statistic": -35.1201329821999,
+      "p_value_onesided": 4.700183639110487e-254,
+      "cohens_d": -0.36530000249038425,
+      "context_dependence": 58.522163892827365
+    }
+  },
+  "correlation_matrix": {
+    "jaccard_raw": {
+      "jaccard_raw": 1.0,
+      "jaccard_lemmatized": 0.8586836986870306,
+      "cosine_similarity": 0.8137752813515876
+    },
+    "jaccard_lemmatized": {
+      "jaccard_raw": 0.8586836986870306,
+      "jaccard_lemmatized": 1.0,
+      "cosine_similarity": 0.7790574353100648
+    },
+    "cosine_similarity": {
+      "jaccard_raw": 0.8137752813515876,
+      "jaccard_lemmatized": 0.7790574353100648,
+      "cosine_similarity": 1.0
+    }
+  }
+}

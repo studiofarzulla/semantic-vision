@@ -1,0 +1,81 @@
+
+%==============================================================================
+% Section: Tucker Stability Analysis
+%==============================================================================
+\subsection{Tucker Decomposition Stability}
+\label{sec:tucker-stability}
+
+To assess the reliability of our Tucker decomposition results, we conducted bootstrap resampling (1,000 iterations) and rank sensitivity analysis.
+
+\textbf{Bootstrap Confidence Intervals}. Table~\ref{tab:tucker-stability} reports factor loadings with 95\% bootstrap CIs. Key interpretable loadings remain stable:
+\begin{itemize}
+    \item \textbf{Dim$_2$ (Culinary Manifold)}: Chef loads at 0.95 with narrow CI, confirming isolation
+    \item \textbf{Dim$_3$ (Access Axis)}: Child (+0.72) and Mobility ($-0.60$) maintain opposite poles
+\end{itemize}
+
+\begin{table}[H]
+\caption{Tucker Factor Loadings with Bootstrap 95\% CIs}
+\label{tab:tucker-stability}
+\centering
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Prime} & \textbf{Dim$_1$} & \textbf{Dim$_2$} & \textbf{Dim$_3$} \\
+\midrule
+P0: Neutral & 0.41 [0.41, 0.42] & -0.12 [-0.13, -0.10] & -0.07 [-0.11, -0.02] \\
+P1: Chef & 0.26 [0.26, 0.26] & 0.95 [0.95, 0.96] & 0.09 [0.08, 0.11] \\
+P2: Security & 0.42 [0.42, 0.43] & -0.15 [-0.17, -0.14] & -0.20 [-0.24, -0.15] \\
+P3: Child & 0.37 [0.37, 0.37] & -0.13 [-0.15, -0.10] & 0.72 [0.63, 0.78] \\
+P4: Mobility & 0.40 [0.40, 0.41] & 0.03 [-0.00, 0.06] & -0.60 [-0.70, -0.51] \\
+P5: Urgent & 0.38 [0.38, 0.39] & -0.15 [-0.17, -0.14] & -0.06 [-0.11, -0.00] \\
+P6: Leisure & 0.37 [0.36, 0.38] & -0.10 [-0.11, -0.09] & 0.25 [0.21, 0.28] \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Values: mean [95\% CI] from 1,000 bootstrap resamples.
+\end{tablenotes}
+\end{table}
+
+\textbf{Factor Congruence}. Tucker's congruence coefficient~\cite{lorenzo1999} measures similarity of factor loadings across bootstrap samples. Table~\ref{tab:factor-congruence} shows all dimensions achieve ``good'' congruence ($>$0.95) in the vast majority of bootstrap iterations, indicating stable factor structure.
+
+\begin{table}[H]
+\caption{Factor Congruence Across Bootstrap Samples}
+\label{tab:factor-congruence}
+\centering
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Dimension} & \textbf{Mean} & \textbf{SD} & \textbf{\% Good} & \textbf{\% Fair} \\
+\midrule
+Dim 1 & 1.000 & 0.000 & 100.0\% & 100.0\% \\
+Dim 2 & 1.000 & 0.000 & 100.0\% & 100.0\% \\
+Dim 3 & 0.997 & 0.004 & 100.0\% & 100.0\% \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Good: congruence $>$0.95; Fair: congruence $>$0.85.
+\end{tablenotes}
+\end{table}
+
+\textbf{Rank Sensitivity}. Table~\ref{tab:rank-sensitivity} compares explained variance across Tucker rank choices. Our chosen rank [10,3,10] achieves reasonable variance capture while maintaining interpretable 3-dimensional context factor structure. Higher ranks marginally increase explained variance but do not qualitatively change the factor interpretation.
+
+\begin{table}[H]
+\caption{Tucker Rank Sensitivity Analysis}
+\label{tab:rank-sensitivity}
+\centering
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Rank} & \textbf{Exp. Var.} & \textbf{Note} \\
+\midrule
+[5,3,5] & 39.7\% &  \\
+[10,3,10] & 46.6\% & $\leftarrow$ \textit{chosen} \\
+[15,3,15] & 50.9\% &  \\
+[20,3,20] & 53.9\% &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Conclusion}. The Tucker decomposition reveals stable, interpretable latent structure. The Culinary (Dim$_2$) and Access (Dim$_3$) factors are robust to bootstrap resampling and represent genuine functional manifolds in VLM affordance computation.

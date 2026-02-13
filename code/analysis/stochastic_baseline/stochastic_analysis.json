@@ -1,0 +1,108 @@
+{
+  "embedding_variance": {
+    "0.0": {
+      "within_mean_similarity": 0.9683989882469177,
+      "cross_mean_similarity": 0.4339993894100189,
+      "within_variance_proxy": 0.031601011753082275,
+      "cross_variance_proxy": 0.5660005807876587,
+      "variance_ratio": 17.910837173461914,
+      "n_within_groups": 120,
+      "n_cross_groups": 90
+    },
+    "0.3": {
+      "within_mean_similarity": 0.8777725100517273,
+      "cross_mean_similarity": 0.43674665689468384,
+      "within_variance_proxy": 0.1222274899482727,
+      "cross_variance_proxy": 0.5632533431053162,
+      "variance_ratio": 4.6082377433776855,
+      "n_within_groups": 124,
+      "n_cross_groups": 91
+    },
+    "0.7": {
+      "within_mean_similarity": 0.8328539133071899,
+      "cross_mean_similarity": 0.42830488085746765,
+      "within_variance_proxy": 0.16714608669281006,
+      "cross_variance_proxy": 0.57169508934021,
+      "variance_ratio": 3.4203319549560547,
+      "n_within_groups": 128,
+      "n_cross_groups": 92
+    },
+    "1.0": {
+      "within_mean_similarity": 0.831464946269989,
+      "cross_mean_similarity": 0.4188331365585327,
+      "within_variance_proxy": 0.168535053730011,
+      "cross_variance_proxy": 0.5811668634414673,
+      "variance_ratio": 3.4483442306518555,
+      "n_within_groups": 127,
+      "n_cross_groups": 91
+    }
+  },
+  "jaccard_variance": {
+    "0.0": {
+      "within_mean_jaccard": 0.673541574309459,
+      "cross_mean_jaccard": 0.0961599630344286,
+      "within_n": 1189,
+      "cross_n": 1693,
+      "dissimilarity_ratio": 2.7686221761736562,
+      "mannwhitney_statistic": 1787951.0,
+      "mannwhitney_pvalue": 1.2789179529936066e-280
+    },
+    "0.3": {
+      "within_mean_jaccard": 0.30959674322485187,
+      "cross_mean_jaccard": 0.09441026389208944,
+      "within_n": 1156,
+      "cross_n": 1702,
+      "dissimilarity_ratio": 1.3116823062769023,
+      "mannwhitney_statistic": 1739013.5,
+      "mannwhitney_pvalue": 1.0341290048847202e-268
+    },
+    "0.7": {
+      "within_mean_jaccard": 0.25102294296655286,
+      "cross_mean_jaccard": 0.09181887908253274,
+      "within_n": 1116,
+      "cross_n": 1632,
+      "dissimilarity_ratio": 1.2125620035873952,
+      "mannwhitney_statistic": 1595790.5,
+      "mannwhitney_pvalue": 1.1881044236483697e-248
+    },
+    "1.0": {
+      "within_mean_jaccard": 0.24048640461118373,
+      "cross_mean_jaccard": 0.0905374317235173,
+      "within_n": 1121,
+      "cross_n": 1641,
+      "dissimilarity_ratio": 1.1974276349996125,
+      "mannwhitney_statistic": 1617466.0,
+      "mannwhitney_pvalue": 6.191079608226509e-254
+    }
+  },
+  "eta_squared": {
+    "0.0": {
+      "eta_squared": 0.2671810984611511,
+      "ss_between": 128.7666015625,
+      "ss_total": 481.94500732421875,
+      "n_primes": 7,
+      "n_observations": 599
+    },
+    "0.3": {
+      "eta_squared": 0.2631795108318329,
+      "ss_between": 127.03811645507812,
+      "ss_total": 482.7052001953125,
+      "n_primes": 7,
+      "n_observations": 602
+    },
+    "0.7": {
+      "eta_squared": 0.25838199257850647,
+      "ss_between": 122.86528015136719,
+      "ss_total": 475.5179443359375,
+      "n_primes": 7,
+      "n_observations": 591
+    },
+    "1.0": {
+      "eta_squared": 0.2523173987865448,
+      "ss_between": 120.33543395996094,
+      "ss_total": 476.9208984375,
+      "n_primes": 7,
+      "n_observations": 592
+    }
+  }
+}
