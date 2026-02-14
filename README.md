@@ -1,10 +1,13 @@
 # Context-Dependent Affordance Computation in Vision-Language Models
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18091089-blue.svg)](https://doi.org/10.5281/zenodo.18091089)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **Working Paper DAI-2505**
 
 Murad Farzulla — [Dissensus AI](https://dissensus.ai) / King's College London
 
-**DOI:** [10.5281/zenodo.18091090](https://doi.org/10.5281/zenodo.18091090)
+**DOI:** [10.5281/zenodo.18091089](https://doi.org/10.5281/zenodo.18091089)
 
 ## Abstract
 
@@ -59,12 +62,23 @@ The `code/` directory contains the full experimental pipeline:
   author    = {Farzulla, Murad},
   title     = {Context-Dependent Affordance Computation in Vision-Language Models},
   year      = {2025},
-  doi       = {10.5281/zenodo.18091090},
-  url       = {https://doi.org/10.5281/zenodo.18091090}
+  doi       = {10.5281/zenodo.18091089},
+  url       = {https://doi.org/10.5281/zenodo.18091089}
 }
 ```
+
+## Zenodo
+
+The paper is archived on Zenodo: [10.5281/zenodo.18091089](https://doi.org/10.5281/zenodo.18091089)
 
 ## License
 
 - **Paper:** CC-BY-4.0
 - **Code:** MIT
+
+## Links
+
+- Paper (Zenodo): https://doi.org/10.5281/zenodo.18091089
+- Code (GitHub): https://github.com/studiofarzulla/semantic-vision
+- ASCRI programme page: https://systems.ac/5/DAI-2505
+- Dissensus AI: https://dissensus.ai
